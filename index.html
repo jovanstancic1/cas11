@@ -12,7 +12,7 @@
     <button onclick="next()">start</button>
     <button onclick="slidestop()">stop</button>
     <script>
-        var Slike = new Array()
+        var slike = new Array()
         slike[0] = "slika1.jpg";
         slike[1] = "slika2.jpg";
         slike[2] = "slika3.jpg";
@@ -29,7 +29,7 @@
         }
         function back() {
             trenutnaslika--;
-            if(trenutnaslika == -1) trentunaslika = ukupnoslika - 1
+            if(trenutnaslika == -1) trenutnaslika = ukupnoslika - 1
             document.getElementById("slika").src = slike[trenutnaslika];
         }
         var timer;
